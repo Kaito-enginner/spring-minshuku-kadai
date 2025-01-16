@@ -116,7 +116,7 @@ footer {
   width: 150px;
 }
 
-.samuraitravel-vertical-card-item {
+.samuraitravel-vertical-card-image {
 	width: 100%;
 	height: 150px;
 	object-fit: cover;
@@ -127,7 +127,7 @@ footer {
 }
 
 @media screen and(min-width: 1400px) {
-	.samuraitravel-conteainer {
+	.samuraitravel-container {
 			max-width: 1200px;
 		}
 }

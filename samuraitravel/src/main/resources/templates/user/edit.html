@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="https://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 	<head>
-		<div th:replave="~{fragment :: meta}"></div>
+		<div th:replace="~{fragment :: meta}"></div>
 		
 		<div th:replace="~{fragment :: styles}"></div>
 		
@@ -9,14 +9,14 @@
 	</head>
 	
 	<body>
-		<div class="samuraitravle-wrapper">
+		<div class="samuraitravel-wrapper">
 			<!-- ヘッダー -->
 			<div th:replace="~{fragment :: header}"></div>
 			
 			<main>
 				<div class="container pb-5 samuraitravel-container">
 					<div class="row justify-content-center">
-						<div class="col-xl-5 col-col-lg-6 col-md-8">
+						<div class="col-xl-5 col-lg-6 col-md-8">
 							<nav class="my-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
 								<ol class="breadcrumb mb-0">
 									<li class="breadcrumb-item"><a th:href="@{/}">ホーム</a></li>

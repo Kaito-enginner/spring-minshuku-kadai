@@ -67,7 +67,7 @@
 										</li>
 										<li class="page-item">
 											<span th:if="${reservationPage.isLast()}" class="page-link disabled">次</span>
-											<a th:unless="${reservationPage.isLast()}" th:href="@{/reservations(page = ${reservationPage.getNumber()} + 1)}" class="page-link samuraitravel-page-link">次</a>
+											<a th:unless="${reservationPage.isLast()}" th:href="@{/reservations(page = ${reservationPage.getNumber() + 1})}" class="page-link samuraitravel-page-link">次</a>
 										</li>
 									</ul>
 								</nav>

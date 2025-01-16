@@ -100,7 +100,7 @@ public class ReservationController {
 		LocalDate checkoutDate = reservationInputForm.getCheckoutDate();
 		
 		Integer price = house.getPrice();
-		Integer amount = reservationService.caluculateAmount(checkinDate, checkoutDate, price);
+		Integer amount = reservationService.calculateAmount(checkinDate, checkoutDate, price);
 		
 		ReservationRegisterForm reservationRegisterForm = new ReservationRegisterForm(house.getId(), user.getId(), checkinDate.toString(), checkoutDate.toString(), reservationInputForm.getNumberOfPeople(), amount);
 		
@@ -123,27 +123,3 @@ public class ReservationController {
 //	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
